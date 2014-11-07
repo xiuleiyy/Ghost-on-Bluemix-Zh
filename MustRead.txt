@@ -1,0 +1,39 @@
+
+
+This is an updated version for run on Bluemix
+
+If you download from office site, you need to modify below to run on Bluemix.
+
+1. config.js
+
+ Modify production section in config.js
+
+
+2. core/index.js
+
+//process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
+process.env.NODE_ENV = process.env.NODE_ENV || 'production';
+
+
+        server: {
+            
+            host: process.env.VCAP_APP_HOST,
+            
+            port: process.env.VCAP_APP_PORT
+        }
+
+    },
+
+
+Access http://ghost1104.mybluemix.net/ghost first to register
+
+then access http://ghost1104.mybluemix.net to see your blogs
+
+Other links:
+http://ghost1104.mybluemix.net/ghost/signin/
+http://ghost1104.mybluemix.net/ghost/signup/
+
+
+
+If you want to run on Local, you can follow http://www.ghostchina.com/

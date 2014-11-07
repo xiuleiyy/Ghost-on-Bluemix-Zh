@@ -7,7 +7,7 @@ Visit the project's website at http://ghost.org • docs on http://support.ghost
 Ghost-on-Bluemix-Zh
 ===================
 
-Chinese version - Ghost on Bluemix
+Chinese version - Ghost on Bluemix --- 
 Run Ghost on Bluemix with local-file-store type
 
 The code has been modified to run on Bluemix with local-file-store type. In the future, will add DB support and all the files and pics will store in DB, when you restart the app, all the files and pics will be kept.
